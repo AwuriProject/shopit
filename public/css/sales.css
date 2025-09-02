@@ -1,0 +1,364 @@
+.salesOne{
+    background-color: var(--color-white);
+    padding: 2.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.sales__one{
+    display: flex;
+    justify-content: space-between;
+    visibility: hidden;
+    opacity: 0;
+}
+.catalog{
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+.pill{
+    width: auto;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 22rem;
+    padding: 0.75rem 1rem;
+    background-color: #E3E5E5;
+}
+.pill p{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 100%;
+    color: #202325;
+}
+.pill img{
+    width: 1rem;
+    height: 1rem;
+}
+.sales__two{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.sales__two__text{
+    display: flex;
+    justify-content: space-between;
+}
+.sales__two .sales__two__text h2{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 0.8rem;
+    line-height: 100%;
+}
+.sales__two__text a{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 100%;
+    color: #202325;
+
+}
+.gadget__boxs,
+.gadget__boxs__two{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.gadget__box{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.first__gadgetBox{
+    width: auto;
+    height: 10rem;
+    position: relative;
+    border-radius: 0.5rem;
+    border-bottom-width: 1px;
+    background-color: #E3E5E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.iphone__gadget{
+    width: 6rem;
+    height: 8rem;
+}
+.love__gadget{
+    position: absolute;
+    top: 0.2rem;
+    left: 11rem;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.headset{
+    width: 6rem;
+    height: 5rem;
+}
+.smart__tv{
+    width: 10rem;
+    height: 6rem;
+}
+.oven__set{
+    width: 10rem;
+    height: 9rem;
+}
+.microwave{
+    width: 10rem;
+    height: 9rem;
+}
+.washing__mach{
+    width: 10rem;
+    height: 10rem;
+}
+.blender{
+    width: 8rem;
+    height: 8rem;
+}
+.smart__tv__two{
+    width: 9rem;
+    height: 8rem;
+}
+.fan{
+    width: 4rem;
+    height: 7rem;
+}
+.gadget__text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.gadget__text h3{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 120%;
+    color: #202325;
+}
+.gadget__text p{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 120%;
+    color:  #979C9E;
+}
+.gadget__cart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+}
+.gadget__cart a{
+    gap: 0.5rem;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    border: 1px solid #E3E5E5;
+    color: #202325;
+    font-family: 'Inter' sans-serif;
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 100%;
+}
+.gadget__cart h4{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    line-height: 120%;
+    color: #202325;
+}
+.stars img{
+    width: 1rem;
+    height: 1rem;
+}
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+}
+.page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    background-color: #202325;
+}
+.page p{
+    color: var(--color-white);
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 120%;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+.card{
+    width: 9rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 19.64px 0.98px #00000014;
+}
+.card img{
+    width: 9rem;
+    height: 6rem;
+    object-fit: cover;
+}
+.card__title{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.8rem;
+}
+.card__title h2{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 120%;
+    color: #090A0A;
+}
+.card__title p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 120%;
+    color: #72777A;
+}
+@media (min-width: 576px){
+    .pill p{
+        font-size: 1rem;
+    }
+    .sales__two .sales__two__text h2{
+        font-size: 2rem;
+    }
+    .sales__two .sales__two__text a{
+        font-size: 1.25rem;
+    }
+   .love__gadget{
+        left: 15rem;
+    }
+}
+@media (min-width: 768px){
+     /* .gadget__boxs{
+        grid-template-columns: repeat(3, 1fr);
+    } */
+     .love__gadget{
+        left: 12rem;
+    }
+}
+@media (min-width: 992px){
+    .salesOne{
+        padding: 2.5rem 5rem;
+        gap: 2.5rem;
+    }
+     .sales__one{
+        visibility: visible;
+        opacity: 1;
+    }
+    .gadget__boxs{
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .gadget__boxs__two{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .first__gadgetBox{
+        height: 14rem;
+    }
+    .iphone__gadget{
+        width: 7rem;
+        height: 10rem;
+    }
+    .love__gadget{
+        width: 2rem;
+        height: 2rem;
+        left: 8rem;
+    }
+    .headset{
+        width: 8rem;
+        height: 7rem;
+    }
+    .smart__tv{
+        width: 14rem;
+        height: 9rem;
+    }
+    .smart__tv__two{
+        width: 14rem;
+        height: 14rem;
+    }
+    .oven__set{
+        width: 15rem;
+        height: 14rem;
+    }
+    .microwave{
+        width: 15rem;
+        height: 13rem;
+    }
+    .washing__mach{
+        width: 11rem;
+        height: 13rem;
+    }
+    .blender{
+        width: 13rem;
+        height: 13rem;
+    }
+    .fan{
+        width: 7rem;
+        height: 14rem;
+    }
+    .gadget__text h3{
+        font-size: 1.125rem;
+    }
+    .gadget__text p{
+        font-size: 0.8rem;
+    }
+    .gadget__cart a{
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+    }
+    .gadget__cart h4{
+        font-size: 1.25rem;
+    }
+    .stars img{
+        width: 1.125rem;
+        height: 1.125rem;
+    }
+    .cards{
+        flex-direction: row;
+    }
+    .card{
+        width: 18rem;
+        border-radius: 1rem;
+        box-shadow: 0px 0px 40px 2px #00000014;
+    }
+    .card img{
+        width: 18rem;
+        height: 11rem;
+    }
+    .card__title{
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .card__title h2{
+        font-size: 1.5rem;
+    }
+    .card__title p{
+        font-size: 1rem;
+    }
+}
+@media (min-width: 1200px){
+     .love__gadget{
+        left: 10.5rem;
+    }
+}
+@media (min-width: 1400px){
+     .love__gadget{
+        left: 13rem;
+    }
+}

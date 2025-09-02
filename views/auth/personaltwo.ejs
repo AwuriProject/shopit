@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageTitle %></title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/auth.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    <script defer src="/js/index.js" ></script>
+</head>
+<body>
+    <%- include('../includes/header.ejs') %>
+
+    <div class="login__main">
+        <div class="login__header">
+            <div class="login__title">
+                <img src="/images/shop-bag.png" alt="shopping bag">
+                <h1>Shopit</h1>
+            </div>
+            <h2>Personal Information</h2>
+            <p>Please kindly fill in your details</p>
+        </div>
+        <div class="login__form">
+            <form action="/personaltwo" method="POST">
+                <div class="input__group">
+                    <label for="location">Select location</label>
+                    <select name="location" id="location">
+                        <!-- <option value="">NGN</option>
+                        <option value="">UK</option>
+                        <option value="">USA</option>
+                        <option value="">AU</option>
+                        <option value="">KW</option> -->
+                    </select>
+                </div>
+                <div class="input__group">
+                    <label for="date">Date of birth</label>
+                    <input type="date">
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <div class="terms__box">
+                <img src="/images/checkboxes.png" alt="check box">
+                <p>I read and Consented to <span>Terms and Conditions</span></p>
+            </div>
+        </div>
+        <p>For further enquiry and support services, you may want to visit the help 
+            center or contact our customer service team
+        </p>
+    </div>
+
+    <%- include('../includes/footer2.ejs') %>
+</body>
+</html>

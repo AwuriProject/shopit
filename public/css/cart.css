@@ -1,0 +1,218 @@
+.cart__section{
+    background-color: var(--white-color);
+    padding: 2.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5rem;
+}
+.cart__heading{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+.cart__heading a{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 100%;
+    color: #999999;
+}
+.cart__heading .cart__heading__text{
+    color: var(--color-black);
+}
+.cart__subheading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+.cart__item__one{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.cart__image{
+    border-radius: 0.75rem;
+    border-bottom-width: 0.75px;
+    padding: 0.75rem;
+    background-color: #E3E5E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    height: 16rem;
+    border-radius: 0.4rem;
+    border-bottom-width: 0.44px;
+    padding: 0.4rem;
+}
+.cart__image img{
+    width: 14rem;
+    height: 14rem;
+}
+.cart__frame{
+    display: flex;
+    gap: 0.75rem;
+    border-radius: 0.4rem;
+    padding: 0.75rem;
+}
+.cart__frame .num{
+    width: 3.2rem;
+    height: 3rem;
+    border-radius: 0.18rem;
+    border-bottom-width: 0.41px;
+    padding: 0.4rem;
+    background-color: #FBF3EE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart__frame .num img{
+    width: 2.4rem;
+    height: 2.4rem;
+}
+.cart__box{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.cart__box h2{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 100%;
+    color: #090A0A;
+}
+.cart__box p{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 140%;
+    color: #72777A;
+}
+.cart span{
+    color: var(--color-oranged);
+}
+.cart__buttons{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.cart__btn{
+    width: auto;
+    padding: 1rem 2rem;
+    border-radius: 1.5rem;
+    background-color: var(--color-oranged);
+    color: #fff;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 100%;
+}
+.cart__btn__transparent{
+    width: auto;
+    padding: 1rem 2rem;
+    border-radius: 1.5rem;
+    border-width: 1px;
+    border: 1px solid #CDCFD0;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 100%;
+    color: #090A0A;
+}
+.cart__box__one,
+.cart__box__two{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem 0 1rem 0;
+    border-radius: 0.75rem;
+    border-width: 1px;
+    background-color: #FFE0D6;
+    border: 1px solid #FEB19A
+}
+.cart__delivery{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.cart__delivery img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.cart__delivery__text h2{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 100%;
+    color: #090A0A;
+}
+.cart__delivery__text p{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 100%;
+    color: #6C7072;
+}
+hr{
+    width: 100%;
+    border-width: 0.75px;
+    border: 0.75px solid #FEB19A
+}
+@media (min-width: 576px){
+
+}
+@media (min-width: 768px){
+    
+}
+@media (min-width: 992px){
+  .cart__section{
+        padding: 2rem 4rem;
+        gap: 2rem;
+  } 
+  .cart__subheading{
+        flex-direction: row;
+        gap: 4rem;
+    } 
+  .cart__heading{
+        flex-direction: row;
+    }
+    .cart__image{
+        width: 34rem;
+        height: 28rem;
+    }
+    .cart__image img{
+        width: 16rem;
+        height: 16rem;
+    }
+    .cart__frame{
+        gap: 1.125rem;
+    }
+    .cart__frame .num{
+        width: 6rem;
+        height: 6rem;
+        border-radius: 0.4rem;
+        border-bottom-width: 0.75px;
+        padding: 0.75rem;
+    }
+    .cart__frame .num img{
+        width: 4rem;
+        height: 4rem;
+    }
+    .cart__box h2{
+        font-size: 1.5rem;
+    }
+    .cart__box p{
+        font-size: 1rem;
+    }
+}
+@media (min-width: 1200px){
+    
+}
+@media (min-width: 1400px){
+    
+}

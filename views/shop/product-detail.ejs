@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageTitle %></title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/hero.css">
+    <link rel="stylesheet" href="/css/purchase.css">
+    <link rel="stylesheet" href="/css/sales.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    <script defer src="/js/index.js" ></script>
+</head>
+<body>
+    <%- include('../includes/header.ejs') %>
+    <section class="cart__section">
+        <div class="cart__heading">
+            <a href="#">Home /</a>
+            <a href="#">Electronics /</a>
+            <a href="#">Visuals /</a>
+            <a href="#">Television /</a>
+            <a href="#">Shop Television by Type /</a>
+            <a  href="#" class="cart__heading__text">Apple Iphone 15Pro Max</a>
+        </div>
+        <div class="cart__subheading">
+            <div class="cart__item__one">
+                <div class="cart__image">
+                    <img src="/images/iphone-13.png" alt="iphone">
+                </div>
+                <div class="cart__frame">
+                    <div class="num"><img src="/images/iphone-13.png" alt="iphone"></div>
+                    <div class="num"><img src="/images/iphone-13.png" alt="iphone"></div>
+                    <div class="num"><img src="/images/iphone-13.png" alt="iphone"></div>
+                    <div class="num"><img src="/images/iphone-13.png" alt="iphone"></div>
+                    <div class="num"><img src="/images/iphone-13.png" alt="iphone"></div>
+                </div>
+            </div>
+            <div class="cart__item__one">
+                <div class="cart__box">
+                    <h2>Apple Iphone 15Pro Max</h2>
+                    <p>It has  8.3mm thicknessiOS 17, up to iOS 17.0.3256GB/512GB/1TB storage, 
+                        no card slot, 6.7”, 48MP, 8GB RAM, 4441MAH
+                    </p>
+                    <div class="stars">
+                        <img src="/images/star.png" alt="full star">
+                        <img src="/images/star.png" alt="full star">
+                        <img src="/images/star.png" alt="full star">
+                        <img src="/images/star.png" alt="full star">
+                        <img src="/images/empty-star.png" alt="empty star">
+                    </div>
+                </div>
+                <hr/>
+
+                <div class="cart__box">
+                    <h2>$1199.99 OR $199.99 Monthly</h2>
+                    <p>
+                        Special financial package for 6 Months plan
+                    </p>
+                </div>
+                <hr/>
+
+                <div class="cart__box">
+                    <h2>Choose a colour for your Tv</h2>
+                    <div class="product__color">
+                        <img src="/images/product-color.png" alt="product color">
+                        <img src="/images/product-color.png" alt="product color">
+                        <img src="/images/product-color.png" alt="product color">
+                        <img src="/images/product-color.png" alt="product color">
+                        <img src="/images/product-color.png" alt="product color">
+                    </div>
+                </div>
+                <hr/>
+
+                <div class="cart__box">
+                    <p>Only <span>12 Items</span> are remaining at our store Don’t miss it!!!</p>
+                    
+                    <div class="cart__buttons">
+                        <a href="#" class="cart__btn">Buy Now</a>
+                        <a href="#" class="cart__btn__transparent">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="cart__box__one">
+                    <div class="cart__delivery">
+                        <img src="/images/smart-car.png" alt="product color">
+                        <div class="cart__delivery__text">
+                            <h2>Free Delivery</h2>
+                            <p>Enter the Address to be delivered to </p>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="cart__delivery">
+                        <img src="/images/smart-car.png" alt="product color">
+                        <div class="cart__delivery__text">
+                            <h2>Return Delivery</h2>
+                            <p>Free one Month Return Delivery Notice</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <%- include('../includes/footer.ejs') %>
+</body>
+</html>

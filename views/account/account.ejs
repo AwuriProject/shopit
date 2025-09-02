@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageTitle %></title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/account.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    <script defer src="/js/index.js" ></script>
+</head>
+<body>
+    <%- include('../includes/header.ejs') %>
+        <main>
+            <div class="account">
+                <div class="sidebar">
+                    <a href="/account" class="account__details" id="my__account">
+                        <img src="/images/one.png" alt="user icon">
+                        <h2>My Account</h2>
+                    </a>
+                    <a href="/order" class="account__details">
+                        <img src="/images/shopping-bag.png" alt="shopping bag">
+                        <h2>Orders</h2>
+                    </a>
+                    <a href="/inbox" class="account__details">
+                        <img src="/images/transparent-sms.png" alt="user icon">
+                        <h2>Inbox</h2>
+                    </a>
+                    <a href="/reviews" class="account__details">
+                        <img src="/images/transparent-star.png" alt="transparent star">
+                        <h2>Reviews</h2>
+                    </a>
+                    <a href="/saveditem" class="account__details">
+                        <img src="/images/heart.png" alt="heart">
+                        <h2>Saved items</h2>
+                    </a>
+                    <a href="/recent" class="account__details">
+                        <img src="/images/clock.png" alt="clock">
+                        <h2>Recently Viewed</h2>
+                    </a>
+                    <span></span>
+                    <div class="user__account">
+                        <h2>Account Management</h2>
+                        <h2>Address Book</h2>
+                        <h2>Newletter Preferences</h2>
+                        <h2>Closed Account</h2>
+                    </div>
+                    <span></span>
+                    <div class="user__logout">
+                        <a href="#">LOGOUT</a>
+                    </div>
+                </div>
+
+                <div class="account__overview">
+                    <h2>Account Overview</h2>
+                    <div class="account__info">
+                        <div class="user__info">
+                            <div class="info__one">
+                                <h2>Account Details</h2>
+                                <span></span>
+                                <div class="user__acct">
+                                    <h3>John Doe</h3>
+                                    <p>johndoe@shopit@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="info__one">
+                                <h2>Shopit Store Credit</h2>
+                                <span></span>
+                                <div class="user__acct">
+                                    <h3>John Doe</h3>
+                                    <p>johndoe@shopit@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="user__info">
+                            <div class="info__one">
+                                <h2>Address Book</h2>
+                                <span></span>
+                                <div class="user__acct">
+                                    <p>No default address available yet</p>
+                                </div>
+                                <a href="#">ADD DEFAULT ADDRESS</a>
+                            </div>
+                            <div class="info__one">
+                                <h2>Newletter Preference</h2>
+                                <span></span>
+                                <div class="user__acct">
+                                    <!-- <h3>John Doe</h3> -->
+                                    <p>johndoe@shopit@gmail.com</p>
+                                </div>
+                                <a href="#">EDIT NEWLETTER PREFERENCE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+</html>

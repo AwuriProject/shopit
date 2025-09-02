@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageTitle %></title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/account.css">
+    <link rel="stylesheet" href="/css/order.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    <script defer src="/js/index.js" ></script>
+</head>
+<body>
+    <%- include('../includes/header.ejs') %>
+        <main>
+            <div class="account">
+                <div class="sidebar">
+                    <a href="/account" class="account__details" >
+                        <img src="/images/one.png" alt="user icon">
+                        <h2>My Account</h2>
+                    </a>
+                    <a href="/order" class="account__details" id="my__account">
+                        <img src="/images/shopping-bag.png" alt="shopping bag">
+                        <h2>Orders</h2>
+                    </a>
+                    <a href="/inbox" class="account__details">
+                        <img src="/images/transparent-sms.png" alt="user icon">
+                        <h2>Inbox</h2>
+                    </a>
+                    <a href="/reviews" class="account__details">
+                        <img src="/images/transparent-star.png" alt="transparent star">
+                        <h2>Reviews</h2>
+                    </a>
+                    <a href="/saveditem" class="account__details">
+                        <img src="/images/heart.png" alt="heart">
+                        <h2>Saved items</h2>
+                    </a>
+                    <a href="/recent" class="account__details">
+                        <img src="/images/clock.png" alt="clock">
+                        <h2>Recently Viewed</h2>
+                    </a>
+                    <span></span>
+                    <div class="user__account">
+                        <h2>Account Management</h2>
+                        <h2>Address Book</h2>
+                        <h2>Newletter Preferences</h2>
+                        <h2>Closed Account</h2>
+                    </div>
+                    <span></span>
+                    <div class="user__logout">
+                        <a href="#">LOGOUT</a>
+                    </div>
+                </div>
+
+                <div class="account__overview">
+                    <h2>Orders</h2>
+                    <div class="order__acct" >
+                        <a href="/open"  class="order__current">
+                            <h2 class="orders" id="current">OPEN ORDERS</h2>
+                        </a>
+                        <a href="/closed" class="order__current">
+                            <h2 class="orders">CLOSED ORDERS</h2>
+                        </a>
+                    </div>
+
+                    <div class="things__order">
+                        <div class="order__info">
+                            <img src="/images/tv.png" alt="television">
+                            <div class="order__details">
+                                <h2>1080p Resolution, Motion Rate 120, Game Mode, Sport Mode</h2>
+                                <p>Order 121867465</p>
+                                <button>Delivered</button>
+                                <p>On 22-10-2023</p>
+                            </div>
+                            <button type="submit" id="prod__detail">VIEW DETAILS</button>
+                        </div>
+
+                        <div class="order__info">
+                            <img src="/images/tv.png" alt="television">
+                            <div class="order__details">
+                                <h2>1080p Resolution, Motion Rate 120, Game Mode, Sport Mode</h2>
+                                <p>Order 121867465</p>
+                                <button>Delivered</button>
+                                <p>On 22-10-2023</p>
+                            </div>
+                            <button type="submit" id="prod__detail">VIEW DETAILS</button>
+                        </div>
+
+                        <div class="order__info">
+                            <img src="/images/tv.png" alt="television">
+                            <div class="order__details">
+                                <h2>1080p Resolution, Motion Rate 120, Game Mode, Sport Mode</h2>
+                                <p>Order 121867465</p>
+                                <button>Delivered</button>
+                                <p>On 22-10-2023</p>
+                            </div>
+                              <button type="submit" id="prod__detail">VIEW DETAILS</button>
+                        </div>
+                    </div>
+
+                    <div class="closed__order hidden">
+                        <div class="order__circle">
+                            <img src="/images/closed-bag.png" alt="good">
+                        </div>
+                        <h2 class="success_msg">No order placed yet</h2>
+                        <p class="success_txt">All Orders placed by you will display here for proper access by you</p>
+                        <a href="/">Continue Shopping</a>
+                    </div>
+                </div>
+
+                <div class="product__detail hidden">
+                        <div class="return__arrow">
+                            <img src="/images/full-arrow.png" alt="left arrow" class="return__back">
+                            <h2>Orders Details</h2>
+                        </div>
+                        <div class="prod__num">
+                            <h2>Order No. 121867465</h2>
+                            <p>1 item</p>
+                            <p>Placed on 14-10-2023</p>
+                            <p>Total : $128.99</p>
+                        </div>
+                        <div class="your__item">
+                            <h2>ITEMS YOUR ORDERED</h2>
+
+                            <div class="your__prod">
+                                <div class="prod__item">
+                                    <div class="prod__deliverBtn">
+                                        <button type="submit" class="prod__del">Delivered</button>
+                                        <button type="submit" class="prod__non">Non Refundable</button>
+                                        <p class="prod__date">On 22-10-2023</p>
+                                    </div>
+                                    <button type="submit" class="prod__history">SEE STATUS HISTORY</button>
+                                </div>
+                               
+                                    <div class="prod__info">
+                                        <img src="/images/tv.png" alt="television">
+                                        <div class="order__details">
+                                            <h2>1080p Resolution, Motion Rate 120, Game Mode, Sport Mode</h2>
+                                            <p>Qty : 1</p>
+                                            <h3>$128.99</h3>
+                                        </div>
+                                    </div> 
+                                    <div class="prod__policy">
+                                        <img src="/images/programming-arrow.png" alt="programming arrow">
+                                        <p>The return period will end on the 31st of October, 2023. <span>kindly click to access our return Policy?</span></p>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                        <div class="prod__method">
+                            <div class="prod__payment">
+                                <h2>Payment Information</h2>
+                                <span class="prod__line"></span>
+                                <div class="payment__info">
+                                    <h2>Payment Method</h2>
+                                    <p>Payment on Delivery</p>
+                                </div>
+                                 <div class="payment__date">
+                                    <h2>Payment Details</h2>
+                                    <p>Item Total: $128.99</p>
+                                    <p>Delivery Fee: $1.15</p>
+                                    <h3>Total: $128.99</h3>
+                                </div>
+                            </div>
+                            <div class="prod__payment">
+                                <h2>Delivery Information</h2>
+                                <span class="prod__line"></span>
+                                <div class="payment__info">
+                                    <h2>Deliver Method</h2>
+                                    <p>Home Delivery</p>
+                                </div>
+                                <div class="payment__date">
+                                    <h2>Shipping Address</h2>
+                                    <p>No. 114 Eneka Road, Rukpokwu, PortHarcourt</p>
+                                </div>
+                                <div class="payment__date">
+                                    <h2>Shipping Details</h2>
+                                    <p>Home Delivery. Fulfilled by Shopit Official Store, Delivery between 20th Oct. and 22nd Oct.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="">Need Help?</a>
+                </div>
+
+                <div class="order__history hidden">
+                    <div class="return__arrow">
+                        <img src="/images/full-arrow.png" alt="left arrow" class="return__back">
+                        <h2>Orders History</h2>
+                    </div>
+                    <div class="order__chart">
+                        <div class="order__process">
+                            <div class="order__candle">
+                                <div class="circle__candle">
+                                    <img src="/images/good-mark.png" alt="good">
+                                </div>
+                                <div class="rect__candle"></div>
+                            </div>
+                            <div class="order__date">
+                                <button>Order placed</button>
+                                <p>02-09-2025</p>
+                            </div>
+                        </div>
+
+                        <div class="order__process">
+                            <div class="order__candle">
+                                <div class="circle__candle green">
+                                    <div class="spot"></div>
+                                </div>
+                                <div class="rect__candle green"></div>
+                            </div>
+                            <div class="order__date">
+                                <button type="submit" class="green">Pending Confirmation</button>
+                                <p>02-09-2025</p>
+                            </div>
+                        </div>
+
+                        <div class="order__process">
+                            <div class="order__candle">
+                                <div class="circle__candle orange">
+                                    <div class="spot"></div>
+                                </div>
+                                <div class="rect__candle orange"></div>
+                            </div>
+                            <div class="order__date">
+                                <button type="submit" class="orange">Waiting to be Shipped</button>
+                                <p>02-09-2025</p>
+                            </div>
+                        </div>
+
+                        <div class="order__process">
+                            <div class="order__candle">
+                                <div class="circle__candle orange">
+                                    <div class="spot"></div>
+                                </div>
+                                <div class="rect__candle orange"></div>
+                            </div>
+                            <div class="order__date">
+                                <button type="submit" class="orange">Shipped</button>
+                                <p>02-09-2025</p>
+                            </div>
+                        </div>
+
+                        <div class="order__process">
+                            <div class="order__candle">
+                                <div class="circle__candle orange">
+                                    <div class="spot"></div>
+                                </div>
+                                <div class="rect__candle orange"></div>
+                            </div>
+                            <div class="order__date">
+                                <button type="submit" class="orange">Out for Delivery</button>
+                                <p>02-09-2025</p>
+                            </div>
+                        </div>
+
+                        <div class="order__process">
+                            <div class="order__candle">
+                                <div class="circle__candle orange">
+                                    <div class="spot"></div>
+                                </div>
+                                <div class="rect__candle orange"></div>
+                            </div>
+                            <div class="order__date">
+                                <button type="submit" class="orange">Delivered</button>
+                                <p>02-09-2025</p>
+                            </div>
+                        </div>
+
+                        <p>Your Order will be delivered on the 25-10-2023.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+</html>

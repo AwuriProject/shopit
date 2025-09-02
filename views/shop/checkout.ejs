@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageTitle %></title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/checkout.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    <script defer src="/js/index.js" ></script>
+</head>
+<body>
+    <%- include('../includes/header.ejs') %>
+        <main>
+            <div class="checkout__main">
+                <div class="checkout__header">
+                    <img src="/images/arrow-left.png" alt="arrow left">
+                    <h2>checkout</h2>
+                </div>
+                <div class="checkout__body">
+                    <div class="checkout__subdiv">
+                        <div class="checkout__product__title">
+                            <h2>Review Item and Shipping</h2>
+                            <div class="checkout__product">
+                                <div class="checkout__subdiv__fraction">
+                                    <div class="checkout__image">
+                                        <img src="/images/iphone.png" alt="Iphone">
+                                    </div>
+                                    <div class="checkout__subdiv__text">
+                                        <h2>Iphone 15Pro-Max</h2>
+                                        <p>Colour: Dark Purple</p>
+                                    </div>
+                                </div>
+                                <div class="checkout__subdiv__text">
+                                    <h2>$1199.99</h2>
+                                    <p>Quantity 1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkout__cust">
+                            <img src="/images/checkbox.png" alt="check box">
+                            <p>Returning Customers?</p>
+                        </div>
+                        <div class="checkout__product__title">
+                            <div class="checkout__form__title">
+                                <h2>Delivery Information</h2>
+                                <a href="">Save Information</a>
+                            </div>
+                            <form action="" method="post">
+                                <div class="input__wrap">
+                                    <div class="input__group">
+                                        <label for="fname">First Name <span>*</span></label>
+                                        <input type="text" name="fName" id="fName" placeholder="Enter...">
+                                    </div>
+                                    <div class="input__group">
+                                        <label for="lname">Last Name <span>*</span></label>
+                                        <input type="text" name="lName" id="lName" placeholder="Enter...">
+                                    </div>
+                                </div>
+                                <div class="input__wrap">
+                                    <div class="input__group">
+                                        <label for="country">Country <span>*</span></label>
+                                        <input type="text" ncName" id="country" placeholder="Enter...">
+                                    </div>
+                                    <div class="input__group">
+                                        <label for="state">State <span>*</span></label>
+                                        <input type="text" name="state" id="state" placeholder="Enter...">
+                                    </div>
+                                </div>
+                                <div class="input__wrap">
+                                    <div class="input__group">
+                                        <label for="town">City Town <span>*</span></label>
+                                        <input type="text" name="town" id="town" placeholder="Enter...">
+                                    </div>
+                                    <div class="input__group">
+                                        <label for="code">Zip Code <span>*</span></label>
+                                        <input type="text" name="code" id="code" placeholder="Enter...">
+                                    </div>
+                                </div>
+                                <div class="input__wrap">
+                                    <div class="input__group">
+                                        <label for="mobile">Mobile <span>*</span></label>
+                                        <input type="number" name="mobile" id="mobile" placeholder="Enter...">
+                                    </div>
+                                    <div class="input__group">
+                                        <label for="email">email <span>*</span></label>
+                                        <input type="text" name="email" id="email" placeholder="Enter...">
+                                    </div>
+                                </div>
+                                <div class="input__wrap">
+                                    <div class="input__group">
+                                        <label for="address">Address <span>*</span></label>
+                                        <input type="text" name="address" id="address" placeholder="Enter...">
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="checkout__delivery">
+                                <div class="checkout__form__title">
+                                    <h2>Delivery Information</h2>
+                                    <a href="">Edit</a>
+                                </div>
+                                <div class="address">
+                                    <h2>River State</h2>
+                                    <p>Houston, Texas, United State</p>
+                                    <p>555-555-555</p>
+                                    <p>johndoe@shopit.com</p>
+                                </div>
+                            </div>
+                            <p><strong>Note:</strong> Your information is safe on our server.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="checkout__order">
+                        <h2>Order Summary</h2>
+                        <div class="checkout__order__btn">
+                            <input type="text" placeholder="Enter Coupon Code">
+                            <a href="">Apply Coupon</a>
+                        </div>
+                        <div class="order__payment">
+                            <h2>Order Summary</h2>
+                                <div class="payment__delivery">
+                                    <div class="checkout__circle"></div>
+                                    <p>Cash on delivery</p>
+                                </div>
+
+                                <div class="payment__delivery">
+                                    <div class="checkout__circle"></div>
+                                    <p>Shopit Card </p>
+                                </div>
+
+                                <div class="payment__delivery">
+                                    <div class="checkout__circle"></div>
+                                    <p>Paypal</p>
+                                </div>
+
+                                <div class="payment__delivery">
+                                    <div class="checkout__circle checkout__circle__color"></div>
+                                    <p>Credit or Debit Card</p>
+                                </div>
+                        </div>
+                        <div class="paymet__methods">
+                            <div class="methods__card amazon"><img src="/images/amazon.png" alt="Amazon"></div>
+                            <div class="methods__card master-card"><img src="/images/master-card.png" alt="Master Card"></div>
+                            <div class="methods__card visa"><img src="/images/visa.png" alt="Visa"></div>
+                        </div>
+                        
+                            
+                        <form action="" method="post">
+                            <div class="input__wrap">
+                                <div class="input__group">
+                                    <label for="email">email <span>*</span></label>
+                                    <input type="text" name="email" id="email" placeholder="Enter...">
+                                </div>
+                            </div>
+                            <div class="input__wrap">
+                                <div class="input__group">
+                                    <label for="cNumber">Card Number <span>*</span></label>
+                                    <div class="card-pos">
+                                        <img src="/images/card-pos.png" alt="">
+                                        <input type="text" name="cNumber" id="cNumber" placeholder="Enter...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input__wrap">
+                                <div class="input__group">
+                                    <label for="cName">Card Holder Name <span>*</span></label>
+                                    <input type="text" name="cName" id="cName" placeholder="Enter...">
+                                </div>
+                            </div>
+                            <div class="input__wrap">
+                                <div class="input__group">
+                                    <label for="eDate">Expiry Date <span>*</span></label>
+                                    <input type="date" name="eDate" id="eDate" placeholder="Enter...">
+                                </div>
+                                <div class="input__group">
+                                    <label for="cvv">CVV <span>*</span></label>
+                                    <input type="password" name="cvv" id="cvv" placeholder="Enter...">
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="total__order__view">
+                            <div class="total__order__view">
+                                <div class="total__order">
+                                    <p>Subtotal</p>
+                                    <h4>$1199.99</h4>
+                                </div>
+                                <hr class="line"/>
+                                <div class="total__order">
+                                    <p>Subtotal</p>
+                                    <h4>$1199.99</h4>
+                                </div>
+                                <hr class="line"/>
+                                <div class="total__order">
+                                    <p>Subtotal</p>
+                                    <h4>$1199.99</h4>
+                                </div>
+                                <hr class="line"/>
+                                <div class="total__order">
+                                    <h2>TOTAL</h2>
+                                    <h4>$1199.99</h4>
+                                </div>
+                            </div>
+                            <a href="" class="order__btn">Pay $1270.76</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    <%- include('../includes/footer.ejs') %>
+</body>
+</html>

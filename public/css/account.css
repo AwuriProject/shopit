@@ -1,0 +1,147 @@
+.account{
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+.sidebar{
+    flex: 30%;
+    gap: 0.75rem;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 20px 0px #00000014;
+    background-color: #fff;
+    height: 36rem;
+}
+#my__account{
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+    background-color: #FE9271;
+}
+#my__account img{
+    width: 1.125rem;
+}
+#my__account h2{
+    color: #090A0A;
+    font-weight: 600;
+}
+.account__details{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 0.75rem;
+    padding: 0.75rem 1.125rem;
+}
+.account__details h2{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 100%;
+    color: #404446;
+}
+.user__account{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+    width: 100%;
+}
+.user__account h2{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 100%;
+    color: #404446;
+}
+.user__logout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+    gap: 0.75rem;
+}
+.user__logout a{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 0.75rem;
+    line-height: 100%;
+    color: #FE5722;
+}
+.account__overview{
+    flex: 70%;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0.25rem 1.25rem 0px #00000014;
+    display: flex;
+    flex-direction: column;
+    /* height: 36rem; */
+}
+.account__overview h2{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 100%;
+    color: #090a0a;
+}
+.account__info{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+.user__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+.info__one{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    border-radius: 0.4rem;
+    border: 0.75px solid #E3E5E5;
+    height: 10rem;
+}
+.info__one h2{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 100%;
+    color: #090a0a;
+    padding: 0.75rem;
+}
+.info__one span,
+.sidebar span{
+    display: block;
+    width: 100%;
+    height: 0px;
+    border-width: 0.75px;
+    border: 0.75px solid #FE9271;
+}
+.info__one .user__acct{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 0.75rem;
+}
+.info__one h3{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 100%;
+    color: #72777A;
+}
+.info__one p{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 100%;
+    color: #72777A;
+}
+.info__one a{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 100%;
+    color: var(--color-oranged);
+    padding: 0.75rem;
+}
